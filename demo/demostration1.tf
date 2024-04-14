@@ -64,6 +64,7 @@ locals {
 #> coalesce("", var.empty, "a", 1)
 #> coalesce("", var.empty)
 
+
 #> contains(tolist(["q","w","e"]), "w")
 #> contains(tolist(["q","e"]), "w")
 
@@ -89,3 +90,4 @@ locals {
 #> [for a in  local.test_list : upper(a) if a !="production"]
 
 #4. templatefile
+
