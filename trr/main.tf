@@ -86,7 +86,7 @@ resource "yandex_compute_instance" "vm" {
 
     provisioner "file" {
       source      = "./усtoken"
-      destination = "/root/усtoken"
+      destination = "/root/yctoken"
     }
 
     provisioner "file" {
