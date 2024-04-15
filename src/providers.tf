@@ -8,8 +8,8 @@ terraform {
 }
 
 provider "yandex" {
-  token     = var.token
-  cloud_id  = var.cloud_id
-  folder_id = var.folder_id
+  token     = local.token
+  cloud_id  = local.cloud_id
+  folder_id = local.folder_id
   zone      = var.default_zone
 }
