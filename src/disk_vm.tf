@@ -36,7 +36,8 @@ resource "yandex_compute_instance" "storage" {
   dynamic "secondary_disk" {
     for_each = "${yandex_compute_disk.mydisk.*.id}"
     content {
-      disk_id     = yandex_compute_disk.mydisk["${secondary_disk.key}"].id
+      # disk_id     = yandex_compute_disk.mydisk["${secondary_disk.key}"].id
+      disk_id     = secondary_disk.value
     }
   }
 
