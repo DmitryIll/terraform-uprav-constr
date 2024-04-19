@@ -91,6 +91,10 @@ variable "each_vm" {
 
 ![alt text](image-12.png)
 
+После создания ВМ в консоле видно:
+
+![alt text](image-20.png)
+
 ------
 
 ### Задание 4
